@@ -1,6 +1,6 @@
 package com.example.Eurekaservicediscovery.config;
 
-import org.springframework.context.annotation.Bean;
+/*import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -8,17 +8,17 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;*/
 
 import java.util.Collections;
-
+/*
 @Configuration
 @ComponentScan(basePackages = {"com.example.Eurekaservicediscovery"})
-@EnableWebSecurity
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+@EnableWebSecurity*/
+public class WebSecurityConfig /* extends WebSecurityConfigurerAdapter*/ {
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
+ /*   @Override
+    protected void configure(HttpSecurity http) throws Exception {*/
         //http.csrf().ignoringAntMatchers("/eureka/**");
    /*     http.authorizeRequests()
                 .antMatchers("/login*")
@@ -27,10 +27,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authenticated()
                 .and()
                 .formLogin();*/
-        http.csrf();
+        //http.csrf();
 //        super.configure(http);
-    }
-    @Bean
+    //}
+    /*@Bean
     CorsConfigurationSource corsConfigurationSource(){
         CorsConfiguration corsConfiguration =new CorsConfiguration();
         //Allow all origin
@@ -42,6 +42,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         //Enable CORS on all endpoints
         source.registerCorsConfiguration("/**",corsConfiguration);
         return source;
-    }
+    }*/
 
 }
